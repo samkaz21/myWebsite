@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+#random-facts {
+    background-color: #f0f0f094; /* Change this to your desired background color */
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#random-facts h2 {
+    margin: 0; /* Adjust as needed */
+}
+
+#random-facts #fact-display {
+    margin: 0 15px; /* Adds spacing around the fact display, adjust as needed */
+}
+
+#random-facts button {
+    padding: 5px 10px; /* Adjust button padding as needed */
+    cursor: pointer;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.social-links a {
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.sidebar {
+    flex-basis: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px; /* Minimum width for standard phone sizes */
+}
+
+
+.profile-image {
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 50%; /* Circular image */
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.sidebar nav a:hover {
+    color: #007bff;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    align-content: start;
+}
+
+
+section {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-direction: row; /* Sidebar items in a row on mobile */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+
+    .sidebar nav a {
+        display: inline-block; /* Display links in a line for mobile */
+        margin-right: 10px; /* Add some spacing between links */
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}

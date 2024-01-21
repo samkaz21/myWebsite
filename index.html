@@ -1,0 +1,126 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!-- FontAwesome for icons -->
+</head>
+<body>
+    <header class="title-bar">
+        <div class="name">Sam Zakharia</div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/samkaz21" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/samkaz21" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <img src="filler.jpg" alt="Sam Zakharia" class="profile-image">
+            <nav>
+                <a href="#bio">Bio</a>
+                <a href="#skills">Skills</a>
+                <a href="#resume">Resume</a>
+                <a href="#projects">Projects</a>
+                <a href="#vault">Vault</a>
+            </nav>
+        </div>
+        <div>
+            <section id="random-facts">
+                <h3>Fun info about me:</h3>
+                <p id="fact-display"></p>
+                <button onclick="displayRandomFact()">One more!</button>
+            </section>
+        <div class="content">
+            <section id="bio">
+                <h2>Bio</h2>
+                <p>
+                    Hello! My name is Sam Zakharia, part business-owner part software developer. I discovered my passion for software development in recent years and decided to pursue it by 
+                    enrolling into an MS-CS program at University of Colorado Boulder. My journey began in Beirut, Lebanon where I obtained my Bachelors of Science in Chemistry at the American University of Beirut, one of the most prestigious universities in the Middle East. 
+                    Upon gruadation, I moved to the United States to begin the next phase of my life.
+                </p>
+                <p>
+                    I worked in the quality control department of a couple neutraceutical manfucaturors for a few years before deciding to take a leap of faith and start my own business in 2016. I established a highly rated restaurant, called <a href="https://www.barbonzai.com/" target="_blank">Barbonzai</a>, and expanded to a second location in 2022. 
+                During this time, after a few years of running the business, I began dabbling in software development and discovered my true passion. In an effort to formalize my education, I enrolled into an MS-CS program at University of Colorado Boulder. </p>
+                <p> Since then, I have had various personal projects and the most notable of these is GM-AI, an AI based world builder for fantasy worlds and Dungeons & Dragons players. </p>
+                <p> I am currently looking for a full-time software development position in the San Diego or Orange County Area. </p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul> 
+                        <li><h4>Programming Languages</h4>
+                            <ul>
+                                <li>Dart</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                            </ul></li>
+                        <li><h4>Proficiencies</h4>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>Flask</li>
+                            <li>Google Cloud</li>
+                        </ul></li>
+                </ul>
+            </section>
+            <section id="resume">
+                <h2>Resume</h2>
+                <div id="work-experience">
+                    <h3>Founder & Managing Partner</h3>
+                    <p><strong>Barbonzai, Lake Forest, CA</strong> <em>June 2016 - Current</em></p>
+                    <ul>
+                        <li>Established a successful highly-rated, quick-service restaurant from the ground-up.</li>
+                        <li>Responsibilities include: 
+<ul>
+    <li>Accounting & tax filings</li>
+    <li>Business development and forward guidance</li>
+    <li>Legal compliance</li>
+    <li>Website development</li>
+    <li>HR duties & SOP development</li>
+    <li>Vendor relations & negotiations</li>
+    <li>Lead weekly team building meetings</li>
+</ul>
+                    </ul>
+                    
+                    <h3>Quality Control Chemist II</h3>
+                    <p><strong>Best Formulations, City of Industry, CA</strong> <em>Mar 2015 to May 2016</em></p>
+                    <ul>
+                        <li>Developed and Validated USP &lt;561&gt; pesticide assay via GC-MS with little supervision.</li>
+                        <li>Perform revolving routine tests for QC lab testing as required: GC, HPLC, FTIR, UV-Vis, TLC etc.</li>
+                        <li>Develop fatty acid assay methods for GC.</li>
+                        <li>Perform various tasks at the request of management such as: ordering standards, meeting vendors, contacting service reps and researching novel in-house methods for savings on contract testing.</li>
+                    </ul>
+                    
+                    <h3>Quality Control Chemist</h3>
+                    <p><strong>Captek Softgel International, Cerritos, CA</strong> <em>Sept 2013 to Mar 2015</em></p>
+                    <ul>
+                        <li>Regularly perform GC and UV assays on finished products & raw materials</li>
+                        <li>Review CoAs, assign testing & OOS investigations on RMs which fail to meet specifications</li>
+                        <li>Basic tests such as: titration assays, pH, viscosity, Karl-Fisher, disintegration, particle size, TOTOX value and various other identification tests per USP/FCC techniques</li>
+                    </ul>
+                    
+                    <h3>Quality Control Technician</h3>
+                    <p><strong>Naked Juice / PepsiCo., City of Industry, CA</strong> <em>Sept 2012 to May 2013</em></p>
+                    <ul>
+                        <li>Monitor oPRPs and CCPs in a GMP environment & assisted development of new SOPs</li>
+                        <li>Complete projects as assigned by management & created spreadsheets to facilitate data entry process</li>
+                        <li>Responsible for conducting traces of various products for audits or recalls</li>
+                    </ul>
+                </div>
+                
+
+            </section>
+            
+            <section id="projects">
+                <h2>Projects</h2>
+                <!-- Projects content goes here -->
+            </section>
+            <section id="vault">
+                <h2>Vault</h2>
+                <input type="text" placeholder="Enter code">
+                <button id="button-vault">Go</button>
+            </section>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
